@@ -1,1 +1,11 @@
+class Solution(object):
+    def findDuplicate(self, nums):
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if i==j :
+                    continue
+                if nums[i]==nums[j]:
+                    return nums[i]
+        return null 
 
+// needs to be optimised
